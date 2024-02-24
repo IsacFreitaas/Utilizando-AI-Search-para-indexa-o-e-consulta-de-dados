@@ -1,4 +1,4 @@
-### Utilizando AI Search para fazer indexação e consulta de dados.
+# Azure Cognitive Search: utilizando AI Search para fazer indexação e consulta de dados.
 
 
 Imagine que trabalhamos em uma empresa de café multinacional, estilo Starbucks, e estamos recebendo muitas reclamações de clientes.
@@ -84,12 +84,108 @@ Agora precisaremos criar uma conta de armazenamento para nosso projeto.
 
 
 
-Para isso, vamos a página inicial do portal da Azure e clicamos na opção lá em cima, escrito contas de armazenamento.
+Para isso, vamos a página inicial do portal da Azure e clicamos na opção lá em cima, escrito contas de armazenamento, e vamos em criar.
 <div align="center">
 <img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/480657a5-d1f8-4729-bd8e-9ba3ed3acee7" width="800px"/>
 </div>
 
-5:08
+Agora na parte de criação, verifique se o resource group selecionado é o mesmo que selecionamos nos dois recursos anteriores.
+
+
+
+Na parte de nome da conta de armazenamento, vou definir como "projetosearchaidio" (lembre-se que o nome da conta de armazenamento tem que ser um nome único, que nunca foi usado).
+
+
+
+Região eu sempre coloco East US.
+
+
+
+Em performance, recomendo que deixe em Standard, pois não mudará nada em nosso projeto.
+
+
+
+E em redundância, selecione LRS (armazenamento com redundância local)
+
+
+
+Então essas foram as configurações. Ficou da seguinte maneira:
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/dc57c643-7e7f-4090-b3d8-85366bdbebb6" width="800px"/>
+</div>
+
+Após isso você clica em "Examinar", espera a validação final, e clica em "Criar", e espera a implantação ser finalizada.
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/274ef144-0e98-4085-bd5e-bf160a4e1b8f" width="800px"/>
+</div>
+
+Agora precisamos quebrar algumas regras de segurança de nossa conta de armazenamento para nosso projeto. Básicamente vamos liberar para acesso anônimo.
+
+
+
+Para isso, assim que terminar a implantação, você clica em "Ir para o recurso" (ou volte novamente a parte de contas de armazenamento e localize a que criou para o projeto), e na aba lateral, desce até "Configuração".
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/42b8d185-7abd-41a8-afd6-4fe6475bf709" width="800px"/>
+</div>
+
+Agora vamos habilitar o acesso anônimo ao Blob e salvar, como é mostrado na imagem abaixo.
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/58b94e72-7058-4f6d-9696-6f635ee826ef" width="800px"/>
+</div>
+
+----------------------
+
+### Parte 1.4- Criação e configuração de contêiner na conta de armazenamento. 
+
+----------------------
+
+Agora precisamos criar um contêiner para armazenar os dados que iremos usar. Para isso voltamos para a página da nossa conta de armazenamento e vamos a aba contêiner.
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/1c167040-7e10-4efa-83d3-86e523a70a36" width="800px"/>
+</div>
+
+Agora vamos criar um contêiner (utilize as mesmas configurações que eu pôr).
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/98824b79-4fa5-4b26-bcd0-cae4c3d9d1d7" width="800px"/>
+</div>
+
+----------------------
+
+### Parte 1.5- Upload dos arquivos.
+
+----------------------
+
+Agora precisamos fazer o upload dos arquivos que vamos usar no AI Search pra fazer a indexação e consulta de dados. 
+
+
+
+
+Para isso, eu deixei um link lá no final desse readme, com um link para a documentação oficial desse projeto.
+<div align="center">
+<img src="" width="800px"/>
+
+
+Na etapa que estamos, vai ter um link para você baixar. É um arquivo zip com alguns documentos dentro.
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/754db4df-1ce2-4f9a-8dae-e6d76fb75e4e" width="800px"/>
+
+
+
+Você vai usar algum programa para descompactar esses arquivos. Então, na aba contêiner da nossa conta de armazenamento, você seleciona o contêiner que criamos e clica em upload, e seleciona os arquivos.
+<div align="center">
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/1088af84-b4aa-43e0-927d-bcd7593fdd20" width="800px"/>
+  
+----------------------
+
+### Parte 2- Importando dados para o recurso de AI Search.
+
+----------------------
+
+Agora voltamos ao recurso que criamos inicialmente, e importamos os nossos dados da conta de armazenamento que importamos anteriormente os arquivos.
+<div align="center">
+<img src="" width="800px"/>
+
+
 
 Obrigado por me acompanhar nestes testes até aqui!
 
@@ -100,12 +196,12 @@ Então é isso.
 # Este foi o meu primeiro projeto de Language Studio da Microsoft Azure ML, em meus estudos em Ciência de Dados.
 
 Obrigado pela atenção!
+--------------------------
+LINK para a Documentação oficial:
 
-LINK para Documentação de Apoio:
 
 
-
-1- https://aka.ms/ai900-ai-search
+### 1- https://aka.ms/ai900-ai-search
 
 
 
