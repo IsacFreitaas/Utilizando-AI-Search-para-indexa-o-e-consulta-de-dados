@@ -185,7 +185,7 @@ Agora voltamos ao recurso que criamos inicialmente, e importamos os nossos dados
 <div align="center">
 <img src="" width="800px"/>
 
-
+14:30
 
 Obrigado por me acompanhar nestes testes até aqui!
 
