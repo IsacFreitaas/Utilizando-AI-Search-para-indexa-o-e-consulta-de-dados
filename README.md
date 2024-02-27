@@ -161,19 +161,22 @@ Agora precisamos fazer o upload dos arquivos que vamos usar no AI Search pra faz
 
 
 Para isso, eu deixei um link lá no final desse readme, com um link para a documentação oficial desse projeto.
-<div align="center">
-<img src="" width="800px"/>
+
+
+!
+!
+!
 
 
 Na etapa que estamos, vai ter um link para você baixar. É um arquivo zip com alguns documentos dentro.
 <div align="center">
-<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/754db4df-1ce2-4f9a-8dae-e6d76fb75e4e" width="800px"/>
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/754db4df-1ce2-4f9a-8dae-e6d76fb75e4e" width="800px"/> </div>
 
 
 
 Você vai usar algum programa para descompactar esses arquivos. Então, na aba contêiner da nossa conta de armazenamento, você seleciona o contêiner que criamos e clica em upload, e seleciona os arquivos.
 <div align="center">
-<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/1088af84-b4aa-43e0-927d-bcd7593fdd20" width="800px"/>
+<img src="https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/1088af84-b4aa-43e0-927d-bcd7593fdd20" width="800px"/> </div>
   
 ----------------------
 
@@ -181,11 +184,18 @@ Você vai usar algum programa para descompactar esses arquivos. Então, na aba c
 
 ----------------------
 
-Agora voltamos ao recurso que criamos inicialmente, e importamos os nossos dados da conta de armazenamento que importamos anteriormente os arquivos.
-<div align="center">
-<img src="" width="800px"/>
+Agora voltamos ao nosso mecanismo de busca, o recurso que criamos inicialmente, e importamos os nossos dados da conta de armazenamento que importamos anteriormente os arquivos da seguinte forma:
 
-14:30
+[file](https://github.com/IsacFreitaas/Utilizando-AI-Search-para-indexa-o-e-consulta-de-dados/assets/65254733/59b3d7ef-4969-4fb6-a1f2-9bac7639f2f0)
+
+Então você clica em "Próximo: Adicionar habilidades cognitivas (opcional)" e siga todos os procedimentos que realizei:
+<div align="center">
+<img src="" width="800px"/> </div>
+
+
+
+
+
 
 Obrigado por me acompanhar nestes testes até aqui!
 
